@@ -1,0 +1,10 @@
+fastapi==0.141.1
+fastmcp==4.1.0
+langchain[mcp]==1.4.2
+langchain-core==1.6.4
+langchain-openai==1.6.5
+openai==3.19.2
+pydantic==2.13.5
+pydantic-settings==2.15.0
+python-dotenv==1.2.3
+uvicorn[standard]==0.53.0

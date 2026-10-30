@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools==84.0.0", "wheel==0.48.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-agents-with-python"
+version = "0.1.0"
+description = "Example project for building an e-commerce AI assistant with FastAPI, FastMCP, DuckDB, and Streamlit."
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "duckdb==1.5.5",
+    "fastapi==0.141.1",
+    "fastmcp==4.1.0",
+    "langchain[mcp]==1.4.2",
+    "langchain-core==1.6.4",
+    "langchain-openai==1.6.5",
+    "openai==3.19.2",
+    "pandas==3.0.6",
+    "pydantic==2.13.5",
+    "pydantic-settings==2.15.0",
+    "python-dotenv==1.2.3",
+    "requests==2.34.2",
+    "streamlit==1.64.0",
+    "tabulate==0.10.0",
+    "uvicorn[standard]==0.53.0",
+]
+
+[tool.setuptools]
+py-modules = []
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
